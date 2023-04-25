@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset ="UTF-8">
+	<title>Comment Form</title>
+	<link rel="stylesheet" href="Style.css">
+
+ </head>
+ <body>
+<!--Navigation Bar-->
+<nav id="navigation_bar"> 
+	<img id="logo" src="logo.jpeg" alt="logo">
+		<ul class="navigation_bar_links">
+			<li style="float:right"><a href="../student_details/Student_Details.html">About Us</a></li>
+			<li style="float:right"><a class="active" href="../comment_form/Comment_Form.html">Comments</a></li>
+			<li style="float:right"><a href="../Image_Gallery/Home.html">Image Gallary</a></li>	
+			<li style="float:right"><a href="../Buy_product/store.html">Shop</a></li>
+			<li style="float:right"><a href="../index.html">Home</a>			
+		</ul>
+		</nav>
+	
+ <!--header of the comment page-->
+ <div class="f">
+  <header class="header_1">
+	<h1>Comment Form</h1>
+	<h5>Please share your feedback for improve us</h5>
+	<p>Required *</p>
+</header>
+
+<main> 
+
+<!--form and get thank you message-->
+<form action="submit_return.html" method="get" onsubmit="return check()" novalidate>
+
+<!--Text-->
+<div class="form_text">
+	<label for="fullname"><b>Name: <span class = "name1">*</span></b></label>
+	<input type="text" name="fullname" id="fullname" placeholder="Type your name"   required minlength="1" maxlength="20">
+	<div id="fname" class="abc"></div> 
+</div>
+ 
+ <!--Email-->
+<div class="form_text">
+	<label for = "email2"><b>Email: <span class = "email1">*</span></b></label>
+	<input id="email2" name="email2" type ="email" placeholder="Type your email" required>
+<div id="ename" class="abc"></div>
+</div>
+
+<!--Radio 1-->
+<div  class="form_text">
+	<h4>Is this the first time you have visited the website? (Optional)</h4>
+  	<input type="radio" id="yes" name="yesno" value="yes">
+ 	<label for="yes">Yes</label>
+  	<input type="radio" id="no" name="yesno" value="no">
+ 	<label for="no">No</label>
+</div>
+
+<!--Radio 2-->
+<div  class="form_text">
+  	<h4> (Optional)</h4>
+  	<input type="radio" id="all1" name="all" value="of1">
+    <label for="all1">Yes. all of it</label>
+    <input type="radio" id="all2" name="all" value="of2">
+    <label for="all2">Some of it</label>
+    <input type="radio" id="all3" name="all" value="of3">
+    <label for="all3">No. Not at all</label>
+</div>
+
+<!--Radio 3-->
+<div  class="form_text">
+	<h4>How satisfied were you with our website today? Choose from 0 to 10, where 0 is extremely dissatisfied and 10 is extremely satisfied (Optional)</h4>
+	<div id="e1">
+	<input id="type-0" name="satisfied" type="radio" value="type-0" >
+	<label for ="type-0">0</label>
+		
+	<input id="type-1" name="satisfied" type="radio" value="type-1" >
+	<label for ="type-1">1</label>
+		
+	<input id="type-2" name="satisfied" type="radio" value="type-2" >	
+	<label for ="type-2">2</label>
+		
+	<input id="type-3" name="satisfied" type="radio" value="type-3" >	
+	<label for ="type-3">3</label>
+		
+	<input id="type-4" name="satisfied" type="radio" value="type-4" >		
+	<label for ="type-4">4</label>
+		
+	<input id="type-5" name="satisfied" type="radio" value="type-5" >		
+	<label for ="type-5">5</label>
+		
+	<input id="type-6" name="satisfied" type="radio" value="type-6" >		
+	<label for ="type-6">6</label>
+		
+	<input id="type-7" name="satisfied" type="radio" value="type-7" >		
+	<label for ="type-7">7</label>
+		
+	<input id="type-8" name="satisfied" type="radio" value="type-8" >		
+	<label for ="type-8">8</label>
+		
+	<input id="type-9" name="satisfied" type="radio" value="type-9" >		
+	<label for ="type-9">9</label>
+		
+	<input id="type-10" name="satisfied" type="radio" value="type-10" >		
+	<label for ="type-10">10</label>
+	</div>
+	</div>
+	
+<!--Textarea 1-->
+<div class="textarea">
+	<label for="reason"></label>
+	<textarea id="reason" name="reason" placeholder="Please could you tell reasons for giving this rating? (optional)" maxlength="500" cols="10"></textarea>
+	</div>
+
+<!--Radio 4-->
+<div class="form_text">
+	<h4>How easy to find informationon the site? (Optional)</h4>
+    <input type="radio" id="html" name="fav_language" value="HTML">
+    <label for="html">Easy</label>
+    <input type="radio" id="css" name="fav_language" value="CSS">
+    <label for="css">Average</label>
+    <input type="radio" id="javascript" name="fav_language" value="JavaScript">
+    <label for="javascript">Difficult</label>
+</div>
+
+<!--Radio 5-->
+<div class="form_text">
+	<h4>What is the likelihood that you will return to the site? (Optional)</h4>
+    <input type="radio" id="terms1" name="terms" value="agree">
+	<label for ="terms1">likely</label>
+
+	<input type="radio" id="terms2" name="terms" value="agree">
+	<label for ="terms2">Moderately likely</label>
+
+	<input type="radio" id="terms3" name="terms" value="agree">
+	<label for ="terms3">Unlikely to return</label>
+</div>
+
+<!--Dropdown-->
+<div class="dropdown">
+	<label for ="task"><b>How did you fill this form today? (Optional)</b></label><br>
+	<select id="task" name="task">
+	<option value="Defa">--Please Select--</option>
+	<option value="phone">Phone</option>
+	<option value="desktop">desktop</option>
+	<option value="laptop">laptop</option>
+	</select>
+</div>
+
+<!--textarea2-->
+<div class="textarea">
+	<label for="resoan"></label>
+	<textarea id="resoan" name="resoan" placeholder="Please add any comment you have for improving the website * " maxlength="500" cols="10" required></textarea>
+	<div id="rnumber" class="abc"></div>
+</div>
+
+<!--Submit button-->
+<div>
+<input type="submit" value="Submit" id="submit" >
+</div>
+
+<!--Reset button-->
+<div>
+<button type ="reset" id="reset" value="reset"> Reset </button>
+</div>
+</form>
+</main>
+</div>
+</div>
+<script>
+//Error message 1
+function check () {
+  var valid = true, error = "", field = "";
+
+  field = document.getElementById("fullname");
+  error = document.getElementById("fname");
+  if (!field.checkValidity()) {
+    valid = false;
+    field.classList.add("efd");
+    error.innerHTML = "Please type your name\r\n";
+  } else {
+    field.classList.remove("efd");
+    error.innerHTML = "";
+  }
+
+//Error message 2
+  field = document.getElementById("email2");
+  error = document.getElementById("ename");
+  if (!field.checkValidity()) {
+    valid = false;
+    field.classList.add("efd");
+    error.innerHTML = "Please type your email\r\n";
+  } else {
+    field.classList.remove("efd");
+    error.innerHTML = "";
+  }
+//Error message 3
+  field = document.getElementById("resoan");
+  error = document.getElementById("rnumber");
+  if (!field.checkValidity()) {
+    valid = false;
+    field.classList.add("efd");
+    error.innerHTML = "Please add any comment\r\n";
+  } else {
+    field.classList.remove("efd");
+    error.innerHTML = "";
+  }
+  
+  return valid;
+}
+
+//Get email to my mail
+	function sendEmail(){
+	Email.send({
+	secureToken: "52c05f09-efc8-44c6-ae5e-f0912db00efc",
+    To : 'tharindyanavarathna123@gmail.com',
+    From : document.getElementById("email2").value,
+    Subject : "This is the subject",
+    Body : "Name:" + document.getElementById("fullname").value
+	+"<br> Email:" + document.getElementById("email2").value
+	+"<br> Reason:" + document.getElementById("resoan").value
+})};
+  
+</script>
+
+	<footer class = "pe">
+	&copy; Me | <a href="../student_details/Student_Details.html">Designed by Hasith Gamlath</a>| 2023
+	</footer> 
+</body>
+</html>

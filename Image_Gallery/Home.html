@@ -1,0 +1,319 @@
+<html>
+    <head>
+        <title>
+        Game of the Year
+        </title>
+        
+        <style>
+* {
+  box-sizing: border-box;
+}
+body{
+			display: block;
+			margin-left: auto;
+			margin-right: auto;
+			width: 100%;
+		}
+
+/* The grid: Four equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 25%;
+  padding: 10px;
+}
+.btn-group button {
+
+  border: 1px solid ; 
+  color: white; 
+  padding: 10px 10px; /* Some padding */
+  cursor: pointer; /* Pointer/hand icon */
+  width: -1%; /* Set a width if needed */
+  display: block; /* Make the buttons appear below each other */
+}
+
+/* Style the images inside the grid */
+.column img {
+  opacity: 0.8; 
+  cursor: pointer; 
+}
+
+.column img:hover {
+  opacity: 1;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* The expanding image container */
+.container {
+  position: relative;
+  top:100px;
+  display: none;
+  left: 5px;
+
+}
+
+/* Expanding image text */
+#imgtext {
+position: absolute;
+  top: 20;
+  right: 100;
+  width: 500px;
+  font-size: 13px;
+  
+
+}
+.button2{
+  background-color: red;
+
+}
+.button3{
+  background-color: blue;
+}
+.button4{
+  background-color: navy;
+}
+
+/* Closable button inside the expanded image */
+.closebtn {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  color: black;
+  font-size: 35px;
+  cursor: pointer;
+}
+.img {
+              display: block;
+              margin-left: auto;
+              margin-right: auto;
+            }
+
+	h3{
+	font-size:50px;
+	position:relative;
+	top:100px;
+	}
+
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  overflow: hidden;
+  background-color: #171717;
+  margin:10px 0;
+	}
+
+li {
+  float: left;
+	}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+	}
+
+li a:hover:not(.active) {
+  background-color: #535353;
+	}
+
+.active {
+  background-color: #2A3352;
+	}
+
+/*Logo*/
+#logo{
+	height:8vh;
+	margin:10px;
+	border-radius:20px;
+	position:absolute;
+	top:-3px;
+	}
+	
+.buttons{
+	position:relative;
+	bottom:160px;
+	left:1160px;
+	}
+	
+	.btn-group{
+	position:relative;
+	left:1218px;
+	top:10px;
+	}
+	
+	.row{
+	position:relative;
+	top:50px;
+	}
+
+	.pe{
+	padding: 14px 16px;
+	font-size:20px;
+	cursor: pointer;
+	}
+	
+.pe:hover{
+	background-color:#535353;
+	}
+
+footer {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: #171717;
+	color: white;
+	position:relative;
+	top:100px;
+	}
+            </style>
+    </head>
+
+    <body>
+	 <!--Navigation Bar-->
+	<nav id="navigation_bar"> 
+	<img id="logo" src="logo.jpeg" alt="logo">
+		<ul class="navigation_bar_links">
+			<li style="float:right"><a href="../student_details/Student_Details.html">About Us</a></li>
+			<li style="float:right"><a href="../comment_form/Comment_Form.html">Comments</a></li>
+			<li style="float:right"><a class="active" href="../Image_Gallery/Home.html">Image Gallary</a></li>
+			<li style="float:right"><a href="../Buy_product/store.html">Shop</a></li>
+			<li style="float:right"><a href="../index.html">Home</a>			
+		</ul>
+		</nav>
+	     <h3 align="center" id="header1"><u>SPORTSMAN OF THE YEAR</u>
+    </h3>
+
+    <div style="text-align:center">
+        <h3>Gallery</h3>
+       
+      </div>
+      <div class="btn-group">
+      <button class="button2" value="red" class="button" onclick="red()">
+      <button class="button3" value="blue" class="button" onclick="blue()">
+      <button class="button4" value="navyblue" class="button" onclick="navyblue()">
+        <button id="b" value="random" class="button" onclick="random()"></button>
+      </div>
+
+      <br>
+<div class="buttons">
+  <button type="button" class="button active" onclick="fontchange(15)">A</button>
+  <button type="button" class="button" onclick="fontchange(17)">A</button>
+  <button type="button" class="button" onclick="fontchange(19)">A</button>
+</div>
+
+<!-- The four columns -->
+<div class="row">
+    <div class="column">
+      <img src="novek_tennis.jpeg" alt="Novak Djokovic, born May 22, 1987, is a Serbian professional tennis player. His name is written in Serbian Cyrillic as oвак oкови and romanized as Novak okovi. According to the Association of Tennis Professionals (ATP), he is presently ranked No. 2 in the world in men's singles. He has held the top spot for a record-breaking 380 weeks and seven times during the Open Era. He has amassed 93 singles victories on the men's ATP Tour, including a record 66 Big Titles, a joint-record six Tour Finals, a record ten Australian Opens, a record 38 Masters, and a record 22 majors. The non-calendar year Grand Slam in singles was achieved by Djokovic, who is now the only player in tennis history to hold the titles of the four majors simultaneously on three distinct surfaces. He is also the only person to have twice completed the lifetime Golden Masters in singles by winning each of the nine Masters tournaments, making him the first man in the Open Era to accomplish so" style="height:180px" onclick="myFunction(this);">  
+    </div>
+
+    <div class="column">
+      <img src="messi.jpeg" alt="Leo Messi, also known as Lionel Andrés Messi, is an Argentine professional football player who plays forward for Ligue 1 team Paris Saint-Germain and captains the Argentina national team. He was born on June 24, 1987. Messi, who is recognized as one of the all-time best players, has a record seven Ballon d'Or victories, a record six European Golden Shoes, and was selected for the Ballon d'Or Dream Team in 2020.He spent his entire professional career with Barcelona, retiring from the team in 2021 after winning a club-record 34 trophies there, including 10 La Liga championships, seven Copa del Rey championships, and four UEFA Champions Leagues. He won the 2021 Copa América and the 2022 FIFA World Cup for his nation. Messi is a talented player who consistently scores goals. He owns the La Liga records for most goals (474), most hat-tricks (36) and the UEFA Champions League (eight), and most assists (192 and the Copa América) (17). He also has the biggest aspirations abroad of any man from South America (102). Messi has the most goals of any player with over 800 senior career goals for club and country." style="height:180px" onclick="myFunction(this);">
+    </div>
+    <div class="column">
+      <img src="rafael_tennis.jpg" alt="Rafael Nadal Parera, often spelled Rafael Nadal Parea in Spanish and Catalan, was born on June 3, 1986. He plays tennis professionally. The Association of Tennis Professionals has him ranked as the 13th-best singles player in the world right now (ATP).  He has held the top spot in the world rankings for 209 weeks and five times at the end of the year. He also holds the record for the most weeks spent in the Top 10 of the ATP Rankings in a row (912 weeks), having never dropped out of the Top 10 between April 2005 and March 2023. 22 Grand Slam men's singles trophies, including a record 14 French Open crowns, have been shared by Nadal. With 36 Masters wins and 63 ATP singles trophies, he has won 92 ATP singles championships.Along with Roger Federer and Novak Djokovic, known as the Big Three and widely regarded as the top three male tennis players of all time, Nadal has dominated men's tennis for more than ten years.  Before turning 20, Nadal won 16 victories in the start of his professional career, including his first French Open and six Masters events, making him one of the most successful youths in ATP Tour history. In 2008, Nadal won his first major match off clay by defeating Federer in the historic Wimbledon final, which propelled him to the top of the global rankings for the first time. He backed up his victory at the 2008 Beijing Olympics with an Olympic singles gold." style="height:180px" onclick="myFunction(this);">
+    </div>
+    <div class="column">
+      <img src="max-verstappen new.jpg" alt="Max Emilian Verstappen, a Dutch[3] racing driver and the 2021 and 2022 Formula One World Champion, was born on September 30, 1997. He races in Formula One for Red Bull Racing while flying the Netherlands flag.
+
+Verstappen is the son of Formula One competitor Jos Verstappen and Sophie Kumpen, a racing driver. He enjoyed success in the junior karting and single-seater divisions, breaking numerous records in the KF3, WSK World Series, KZ2, and European Formula 3.At the 2015 Australian Grand Prix, when he was 17 years, 166 days old, he set a new record for the youngest Formula One driver. Verstappen started the 2016 season with Scuderia Toro Rosso, where he spent the whole 2015 season, before being promoted to parent team Red Bull Racing after four races to take Daniil Kvyat's spot. He became the youngest driver to ever win a Formula One Grand Prix and the first Dutch driver to do so when he won the 2016 Spanish Grand Prix on his Red Bull Racing debut at the age of 18. Verstappen became the 34th Formula One World Drivers' Champion after taking the 2021 Abu Dhabi Grand Prix to become the first Dutch driver to win the Formula One World Championship." style="height:180px" onclick="myFunction(this);">
+    </div>
+  </div>
+  <br><br>
+  
+  <div class="container">
+    <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+    <img id="expandedImg" style="width:50%">
+  <div id="imgtext"></div>
+  </div>
+  <!--JS-->
+    <script>
+        function myFunction(imgs) {
+          var expandImg = document.getElementById("expandedImg");
+          var imgText = document.getElementById("imgtext");
+          expandImg.src = imgs.src;
+          imgText.innerHTML = imgs.alt;
+          expandImg.parentElement.style.display = "block";
+        }
+        </script>
+  
+      <script type="text/javascript">
+        function red(){
+          document.bgColor="red";
+        }
+        function blue(){
+          document.bgColor="blue";
+        }
+        function navyblue(){
+          document.bgColor="generateRandomColor";
+        }
+        </script>
+                
+      <script>
+
+                  function fontchange(n){
+                      var paragraph = document.getElementById('imgtext');
+                      paragraph.style.fontSize = n + "px";
+                  }
+          
+                  var buttons = document.querySelector(".buttons");
+                  var button = buttons.querySelectorAll(".button");
+          
+                  for(var i = 0; i < button.length; i++){
+                      button[i].addEventListener('click', function(){
+                          var current = document.getElementsByClassName('active');
+                          current[0].className = current[0].className.replace("active", "");
+                          this.className += " active"
+                      })
+                  }
+              </script>
+        
+    
+    <script type="text/javascript">
+	
+	const hex = [0,1,2,3,4,5,6,7,8,9,'A','B','C','D','F']
+
+	
+
+	let btn = document.getElementById('b')
+	let bgColor = document.getElementById('s')
+
+	
+	  //addEventListener
+	btn.addEventListener("click", (event) => {
+		
+		console.log(event)
+
+		let randomColor = "#"
+
+		for (var i = 0; i < 6; i++) {
+			randomColor += hex[getRandomNumber()]
+		}
+
+		document.body.style.backgroundColor  = randomColor
+		bgColor.textContent = randomColor 
+		
+
+	})
+
+	function getRandomNumber() {
+		
+		return Math.floor(Math.random() * hex.length)
+
+	}
+</script>
+     
+	<footer class = "pe">
+	&copy; Me | <a href="../student_details/Student_Details.html">Designed by Hasith Gamlath</a>| 2023
+	</footer> 
+
+    </body>
+</html>

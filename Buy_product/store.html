@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" href="logo.png">
+        <title>
+            GameOn | Shop
+        </title>
+      
+        <link rel="stylesheet" type="text/css" href="store.css"> 
+        <link rel="stylesheet"  href="header.css"> 
+        <link rel="stylesheet"  href="footer.css"> 
+        <script src="store.js" async></script>
+        <script> 
+            // Passing Values To Invoice Page
+            function passvalues()
+            {
+                var finalTotal=document.getElementsByClassName("cart-total-price")[0].innerText;
+                console.log(finalTotal);
+                localStorage.setItem("textval",finalTotal);
+                return false; 
+            }
+
+           
+            
+        </script>
+    </head>
+    <body>
+        
+
+<!-----------------------------------------------------------------------All Title bar contents ------------------------------------------------------------------------>
+<nav id="navigation_bar"> 
+	<img id="logo" src="logo.jpeg" alt="logo">
+		<ul class="navigation_bar_links">
+			<li style="float:right"><a href="../student_details/Student_Details.html">About Us</a></li>
+			<li style="float:right"><a href="../comment_form/Comment_Form.html">Comments</a></li>
+			<li style="float:right"><a href="../Image_Gallery/Home.html">Image Gallary</a></li>
+			<li style="float:right"><a class="active" href="../Buy_product/store.html">Shop</a></li>
+			<li style="float:right"><a href="../index.html">Home</a>			
+		</ul>
+		</nav>
+<!------------------------------------------------------------ ----------End of the title bar ----------------------------------------------------------------->
+
+  <div class="about-our-products">
+    <h2>About Our Products<h2>
+  </div>   
+  <div class="pa">
+    <p>Welcome to our company that sells sports goods! We are a group of enthusiastic people who think that fitness and sports have the ability to change people's lives. Our business was started with the intention of giving athletes and fitness lovers of all skill levels access to high-quality sports gear.
+      Our extensive selection of sports items includes athletic clothing, shoes, gear, and accessories. Our goods are made to specifically address the demands of players in a wide range of sports, including baseball, basketball, soccer, football, and more. To guarantee that our consumers have access to the newest and best items, we collaborate with leading companies in the market.
+      We appreciate you making our sports equipment firm your first choice for all of your sporting and fitness demands. We look forward to serving you!
+
+    </p>
+  </div>
+
+  <section class="container content-sec">
+    <h2 class="section-header">Your Cart</h2>
+    <div class="cart-row">
+        <span class="cart-item cart-header cart-column">ITEM</span>
+        <span class="cart-price cart-header cart-column">PRICE</span>
+        <span class="cart-quantity cart-header cart-column">QUANTITY</span>
+    </div>
+    <div id="mydiv1" class="cart-items">
+       
+    </div>
+    <div class="cart-total">
+        <strong class="cart-total-title">Total</strong>
+        <span class="cart-total-price">$0</span>
+    </div>
+    <button data-model-target="#model" class="btn btn-primary btn-purchase" type="submit">PURCHASE</button>
+</section>
+
+    <video id="bgvideo" autoplay muted loop>
+        <source src="video/v2.mp4" type="video/mp4">
+    </video>
+    
+
+    <section class="container content-sec">
+            <h2 class="section-header" id="classical" >Team Sports</h2>
+            <div class="shop-items">
+                
+                <div class="shop-item">
+                    <span class="shop-item-title">SS Prince Cricket Helmet
+                    </span>
+                    <img class="shop-item-image" src="imagers/s1 (4).png" >
+                    <div class="shop-item-details">
+                        <span class="shop-item-price">$670</span>
+                    </div>
+                    <div class="shop-item-details">
+                        <button class="btn btn-primary shop-item-button" type="button">Buy Now</button>
+                    </div>
+                </div>
+                <div class="shop-item">
+                    <span class="shop-item-title">SG Batting Gloves 
+                        <h6>(Super Club)</h6>
+                    </span>
+                    <img class="shop-item-image" src="imagers/s1 (5).png" >
+                    <div class="shop-item-details">
+                        <span class="shop-item-price">$395</span>
+                    </div>
+                    <div class="shop-item-details">
+                        <button class="btn btn-primary shop-item-button" type="button">Buy Now</button>
+                    </div>
+                </div>
+                <div? class="shop-item">
+                    <span class="shop-item-title">SG Batting Gloves
+                        <h6>(Campus)</h6>
+                    </span>
+                    <img class="shop-item-image" src="imagers/s1 (6).png">
+                    <div class="shop-item-details">
+                        <span class="shop-item-price">$350</span>
+                    </div>
+                    <div class="shop-item-details">
+                        <button class="btn btn-primary shop-item-button" type="button">Buy Now</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <section class="container content-sec">
+            <h2 class="section-header"id="acoustic" >Running & Fitness</h2>
+            <div class="shop-items">
+                <div class="shop-item">
+                    <span class="shop-item-title">Iron Kettlebell
+                    </span>
+                    <img class="shop-item-image" src="imagers/s1 (1).png" alt="r1">
+                    <div class="shop-item-details">
+                        <span class="shop-item-price">$129</span>
+                    </div>
+                    <div class="shop-item-details">
+                        <button class="btn btn-primary shop-item-button" type="button">Buy Now</button>
+                    </div>
+                </div>
+                <div class="shop-item">
+                    <span class="shop-item-title">Target Pad Dipak
+                    </span>
+    
+                    <img class="shop-item-image" src="imagers/s1 (2).png" alt="r2">
+                    <div class="shop-item-details">
+                        <span class="shop-item-price">$115</span>
+                    </div>
+                    <div class="shop-item-details">
+                        <button class="btn btn-primary shop-item-button" type="button">Buy Now</button>
+                    </div>
+                </div>
+                <div class="shop-item">
+                    <span class="shop-item-title">Push Up Bar Paiyer
+                    </span>
+                    <img class="shop-item-image" src="imagers/s1 (3).png" alt="r3">
+                    <div class="shop-item-details">
+                        <span class="shop-item-price">$280</span>
+                    </div>
+                    <div class="shop-item-details">
+                        <button class="btn btn-primary shop-item-button" type="button">Buy Now</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <section class="container content-sec">
+            <h2 class="section-header" id="bass">Home Play</h2>
+            <div class="shop-items">
+                <div class="shop-item">
+                    <span class="shop-item-title">Practice Carrom Board
+                    </span>
+                    <img class="shop-item-image" src="imagers/s1 (7).png"  >
+                    <div class="shop-item-details">
+                        <span class="shop-item-price">$220</span>
+                    </div>
+                    <div class="shop-item-details">
+                        <button class="btn btn-primary shop-item-button" type="button">Buy Now</button>
+                    </div>
+                </div>
+                <div class="shop-item">
+                    <span class="shop-item-title">Carrom Board Stand Wooden
+                    </span>
+                    <img class="shop-item-image" src="imagers/s1 (8).png" >
+                    <div class="shop-item-details">
+                        <span class="shop-item-price">$120</span>
+                    </div>
+                    <div class="shop-item-details">
+                        <button class="btn btn-primary shop-item-button" type="button">Buy Now</button>
+                    </div>
+                </div>
+                <div class="shop-item">
+                    <span class="shop-item-title">Rapidex Carrom Striker 
+                        <h6>(15g)</h6>
+                    </span>
+                    <img class="shop-item-image" src="imagers/s1 (9).png"  >
+                    <div class="shop-item-details">
+                        <span class="shop-item-price">$18</span>
+                    </div>
+                    <div class="shop-item-details">
+                        <button class="btn btn-primary shop-item-button" type="button">Buy Now</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="container content-sec">
+            <h2 class="section-header" id="electric">Athletics</h2>
+            <div class="shop-items">
+                <div class="shop-item">
+                    <span class="shop-item-title">Starting Block
+                    </span>
+                    <img class="shop-item-image" src="imagers/s1 (10).png"  >
+                    <div class="shop-item-details">
+                        <span class="shop-item-price">$140</span>
+                    </div>
+                    <div class="shop-item-details">
+                        <button class="btn btn-primary shop-item-button" type="button">Buy Now</button>
+                    </div>
+                </div>
+                <div class="shop-item">
+                    <span class="shop-item-title">Iron Shot Put Ball
+                    </span>
+                    <img class="shop-item-image" src="imagers/s1 (11).png" >
+                    <div class="shop-item-details">
+                        <span class="shop-item-price">$120</span>
+                    </div>
+                    <div class="shop-item-details">
+                        <button class="btn btn-primary shop-item-button" type="button">Buy Now</button>
+                    </div>
+                </div>
+                <div class="shop-item">
+                    <span class="shop-item-title">Throw Discus Fiber
+                    </span>
+                    <img class="shop-item-image" src="imagers/s1 (12).png"  >
+                    <div class="shop-item-details">
+                        <span class="shop-item-price">$180</span>
+                    </div>
+                    <div class="shop-item-details">
+                        <button class="btn btn-primary shop-item-button" type="button">Buy Now</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+       
+<!--------------------------------------------------------------------------------Beginning Of User Details Form-------------------------------------------------->
+<div class="model" id="model">
+    <div class="model-header">
+        <div class="title">User Details Form</div>
+        <button data-close-button class="close-button">&times;</button>
+    </div>
+    <div class="model-body">
+        <form  id="create-account-form" action="invoice.html" method="GET">
+            <!-- USERNAME -->
+            <div class="input-group">
+                <label for="username">Name</label>
+                <input type="text" id="username" placeholder="Name" name="Name">
+                <i class="fas fa-check-circle"></i>
+                <i class="fas fa-exclamation-circle"></i>
+                <p>Error Message</p>
+            </div>
+            <!-- EMAIL -->
+            <div class="input-group">
+                <label for="email">Email</label>
+                <input type="text" id="email" placeholder="Email" name="Email">
+                <i class="fas fa-check-circle"></i>
+                <i class="fas fa-exclamation-circle"></i>
+                <p>Error Message</p>
+            </div>
+            <!-- USER ADDRESS -->
+            <div class="input-group">
+                <label for="address">Address</label>
+                <input type="text" id="address" placeholder="Address" name="Address">
+                <i class="fas fa-check-circle"></i>
+                <i class="fas fa-exclamation-circle"></i>
+                <p>Error Message</p>
+            </div>
+            <!-- MOBILE NUMBER  -->
+            <div class="input-group">
+                <label for="mobileNumber">Mobile Number</label>
+                <input type="tel" id="mobileNumber" placeholder="Mobile Number" name="Phone">
+                <i class="fas fa-check-circle"></i>
+                <i class="fas fa-exclamation-circle"></i>
+                <p>Error Message</p>
+            </div>
+            <form action="output-Javascript-Localstorage.html" method="POST">
+                <input id="btnPopup" type="submit" value="Checkout" onclick="passvalues(),invoiceData()"/>
+                <script>
+                function invoiceData(){
+                    var productsVar = document.getElementById('mydiv1').innerHTML;
+                    localStorage.setItem("ITEMS",productsVar);
+                    return;
+                }
+                </script>
+            </form>
+        <script src="userInputValidation.js"></script>
+    </div>
+</div>
+<div id="overlay"></div>
+<!--End Of User Detail Form-->
+
+    <script src="userDetailForm.js" async></script>
+
+ <!-------------------------------------------------------------------website footer ------------------------------------------------------------------------>
+        <footer class = "pe">
+	&copy; Me | <a href="../student_details/Student_Details.html">Designed by Hasith Gamlath</a>| 2023
+	</footer> 
+    
+    
+    <script>
+        function topFunction() {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+        }
+    </script>
+
+    </body>
+</html>

@@ -1,0 +1,294 @@
+body{
+	font-family:arial,sans serif,cursive;
+	color:black;
+	border: none;
+	background-image: url('jZUCsx.jpg');
+  	background-repeat: no-repeat;
+	background-size: 240%;
+	}
+	
+.f{
+	margin:0% 20% 5% 20%;
+	} 
+	
+ul {
+  list-style-type: none;
+  padding: 0;
+  overflow: hidden;
+  background-color: #171717;
+  margin:10px 0;
+	}
+
+li {
+  float: left;
+	}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+	}
+
+li a:hover:not(.active) {
+  background-color: #535353;
+	}
+
+.active {
+  background-color: #2A3352;
+	}
+
+/*Logo*/
+#logo{
+	height:8vh;
+	margin:10px;
+	border-radius:20px;
+	position:absolute;
+	top:-3px;
+	}
+
+.header_1{
+	margin:120px 0 20px 0;
+	background-color:white;
+	border-radius: 10px;
+	border-top:15px solid grey;
+	opacity: 0.8;
+	}
+
+.header_1 h1{
+	text-align:center;
+	font-size:40px;
+	}
+			
+.header_1 h5{
+	text-align:center;
+	font-size:15px;
+	}
+		
+.header_1 p{
+	font-size:15px;
+	color:red;
+	}
+
+.form_text{
+	padding:10px;
+	margin: 10px 0;
+	border: 1px solid grey;
+	border-radius: 10px;
+	background-color: #fff;
+	opacity: 0.8;
+	}
+
+
+#fullname{
+	width:100%;
+	border: none;
+	border-bottom: 1px solid grey;
+	}
+	
+#email2{
+	width:100%;
+	border: none;
+	border-bottom: 1px solid grey;
+	}
+	
+#type-0{
+	position:relative;
+	bottom:20px;
+	left:30px;
+	margin:20px 15px;
+	}
+	
+#type-1{
+	position:relative;
+	bottom:20px;
+	left:30px;
+	margin:20px 15px;
+	}
+	
+#type-2{
+	position:relative;
+	bottom:20px;
+	left:30px;
+	margin:20px 15px;
+	}
+
+#type-3{
+	position:relative;
+	bottom:20px;
+	left:30px;
+	margin:20px 15px;
+	}
+
+#type-4{
+	position:relative;
+	bottom:20px;
+	left:30px;
+	margin:20px 15px;
+	}
+
+#type-5{
+	position:relative;
+	bottom:20px;
+	left:30px;
+	margin:20px 15px;
+	}
+
+#type-6{
+	position:relative;
+	bottom:20px;
+	left:30px;
+	margin:20px 15px;
+	}
+
+#type-7{
+	position:relative;
+	bottom:20px;
+	left:30px;
+	margin:20px 15px;
+	}
+
+#type-8{
+	position:relative;
+	bottom:20px;
+	left:30px;
+	margin:20px 15px;
+	}
+
+#type-9{
+	position:relative;
+	bottom:20px;
+	left:30px;
+	margin:20px 15px;
+	}
+
+#type-10{
+	position:relative;
+	bottom:20px;
+	left:35px;
+	margin:20px 15px;
+	}	
+
+
+.textarea textarea {
+	width: 100%;
+	height: 150px;
+	margin: 8px 0;
+	border: 2px solid #fff;
+	border-radius: 10px;
+	background-color: #fff;
+	font-size: 16px;
+	box-sizing: border-box;
+	resize: none;
+	}
+
+.textarea{
+	opacity: 0.8;
+	}
+
+.dropdown{
+	background-color: #fff;
+	border: 1px solid #fff;
+	border-radius: 10px;
+	padding: 10px;
+	opacity: 0.8;
+	}
+
+.dropdown select{
+	padding:10px;
+	}
+
+#task{
+	width:100%;
+	}
+
+#submit{
+	cursor: pointer;
+	border: none;
+	border-radius: 10px;
+	background-color:darkblue;
+	padding: 15px 32px;
+	text-align: center;
+	font-size: 18px;
+	margin: 4px 2px;
+	color:white;
+	}
+
+#reset{
+	cursor: pointer;
+	border: none;
+	border-radius: 10px;
+	background-color:darkblue;
+	padding: 15px 32px;
+	text-align: center;
+	font-size: 18px;
+	margin: 4px 2px;
+	color:white;
+	}
+
+#submit{
+	float:left;
+	}
+			
+#reset{
+	float:right;
+	}
+
+#submit:hover{
+	background-color:rgb(177, 155, 191);
+	}
+			
+#reset:hover{
+	background-color:rgb(177, 155, 191);
+	}
+
+
+.dropdown select:hover{
+	background-color:rgb(217, 217, 217);
+	cursor: pointer;
+	}
+			
+.radio label:hover{
+	background-color:rgb(217, 217, 217));
+	}
+			
+.radio input{
+	cursor: pointer;
+	}
+	
+.name1,.email1{
+	color:red;
+	}
+	
+.efd { background: #ffe6ee; 
+		border: 1px solid #ffe6ee; 
+	}
+	
+.abc { color: white; 
+		font-weight: bold; 	
+		background-color:#ff5252;
+		border-radius:4px;
+		width: 100%;
+	}
+	
+.pe{
+	padding: 14px 16px;
+	font-size:20px;
+	cursor: pointer;
+	}
+	
+.pe:hover{
+	background-color:#535353;
+	}
+
+footer {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: #171717;
+	color: white;
+	}
+	
+
+	
